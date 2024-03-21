@@ -1,0 +1,91 @@
+@import url(variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0 .2em;
+    box-sizing: border-box;
+    font-family: "Biryani", sans-serif;
+}
+.container1{
+    display: none;
+}
+.contenedor{
+    border: 5px solid black;
+}
+.container1_topRight{
+    grid-area: topright;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container1_topRight div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1_topRight img{
+    width: 60%;
+    height: auto;
+}
+.container1_botton{
+    background: lightseagreen;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+    height: 22em;
+}
+.container1_botton p{
+    font-size: .7em;
+}
+.container1_botton_prices{
+    display: flex;
+
+}
+
+
+.cantidad{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.cantidad h4{
+    border: 2px solid black;
+    width: 60%;
+    padding-left: 1em;
+}
+
+@media (width > 600px){
+    body{
+        padding: 2.2em;
+    }
+    .container1{
+        display: flex;
+        background: lightseagreen;
+        z-index: -100;
+        position: absolute;
+        top: 30%;
+        border: 2px solid black; 
+        justify-content: center;
+    }
+    .container1_topleft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 15em;
+    }
+    .container1_topleft div{
+        border: 2px solid black;
+    }
+    .contenedor{
+        top: 10%;
+        right: 35%;
+        width: 30%;
+        height: 81%;
+        position: absolute;
+        
+    }
+}
